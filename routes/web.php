@@ -4,7 +4,6 @@
 
 Auth::routes();
 
-Route::get('/test', 'HomeController@test')->name("test");
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/pricing', 'HomeController@pricing')->name('pricing');
@@ -16,11 +15,6 @@ Route::post('/contact', 'HomeController@contactPost')->name('contact.post');
 Route::get('/lang/{lang}', 'HomeController@lang')->name("lang");
 
 Route::post('/mailapi', 'HomeController@mailapi')->name("mailapi");
-
-
-
-Route::get('/daily', 'HomeController@daily')->name('daily');
-
 
 
 

@@ -2,9 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Char;
-use App\helper\_Http;
-use App\helper\Dailymotion;
 use App\Reservation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -118,20 +115,5 @@ class HomeController extends Controller
     }
 
 
-    public function test()
-    {
-
-
-        /*
-        Mail::send('emails.inform', [], function ($message) {
-            $message->from('info@cyprustransfer.org', 'Cyprus Transfer');
-            $message->to('ibracrr@gmail.com')->subject('Cyprus Transfer - Rezervasyon Talebi');
-        });
-
-        */
-
-
-        return view("emails.inform");
-    }
 
 }
